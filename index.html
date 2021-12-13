@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum_sumin</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <section id="top">
+            <div id="todoWrap">
+                <form id="todo-form">
+                    <p class="label">I have To Do<span class="dot">.</span></p>
+                    <p id="placeholder">Write a ToDo and Press Enter</p>
+                    <input type="text" required id="todo" name="todo" autocomplete='off'/>
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+            <div id="quoteWrap">
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <!-- e.section#top -->
+        
+        <section id="middle">
+            <div id="user">
+                <h2 id="clock">00:00</h2>
+                
+                <form id="login-form" class="hidden">
+                    <p id="placeholder">My name is <span class="nameDot">.</span></p>
+                    <input 
+                    required
+                    maxlength="15"
+                    type="text" />
+                    <button id="loginBtn">LogIn</button>
+                </form>
+                
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
+            <span class="line line2"></span>
+
+        </section>
+        <!-- e.section2#middel -->
+
+        <section id="bottom">
+            <div id="location">
+                <i class="far fa-compass" style="font-size: 30px;"></i>
+                <span class="city"></span>
+            </div>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+        <!-- e.section3#bottom -->
+    </div>
+    <!-- e.#wrap -->
+
+    <script src="https://kit.fontawesome.com/3c03075c4d.js" crossorigin="anonymous"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
